@@ -1,13 +1,18 @@
 <nav class="navbar">
   <div class="logo">this is my own logo</div>
 
-  <ul class="navlinks">
+  <ul [class]="menu ? 'active' : 'navlinks'">
     <li><a href="#home"> Home </a></li>
     <li><a href="#about"> about </a></li>
     <li><a href="#room"> room </a></li>
     <li><a href="#pages"> pages </a></li>
     <li><a href="#news"> news </a></li>
     <li><a href="#contact"> contact </a></li>
-    <li><a href="#book-now"> book now </a></li>
+    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+    <li class="navbtn"><a href="#book-now"> book now </a></li>
   </ul>
+
+  <div (click)="togglemenu()" class="menu-btn">
+    <i [class]="menu ? 'fa-solid fa-times' : 'fa-solid fa-bars'"></i>
+  </div>
 </nav>

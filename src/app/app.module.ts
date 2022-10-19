@@ -11,6 +11,7 @@ import { RoomsComponent } from './components/rooms/rooms.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { TestimoniesComponent } from './components/testimonies/testimonies.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     RoomsComponent,
     GalleryComponent,
     WelcomeComponent,
-    TestimoniesComponent
+    TestimoniesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
